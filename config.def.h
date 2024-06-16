@@ -64,7 +64,7 @@ static const char *explorercmd[] = {"thunar", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ WINKEY,			XK_s,	   spawn,	   {.v = {"st","-e","pulsmixer",NULL } } },
+	{ WINKEY,			XK_m,	   spawn,	   {.v = {"st","-e","pulsemixer",NULL } } },
 	{ WINKEY,			XK_f,	   spawn,	   {.v = explorercmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
