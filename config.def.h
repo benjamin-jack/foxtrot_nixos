@@ -63,8 +63,8 @@ static const char *termcmd[]  = { "st", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ WINKEY,			XK_s,	   spawn,	   {.v = {"st", "-e", "pulsemixer"} } },
-	{ WINKEY,			XK_f,	   spawn,	   {.v = {"thunar"} } },
+	{ WINKEY,			XK_s,	   spawn,	   {.v = {"st", "-e", "pulsemixer", NULL} } },
+	{ WINKEY,			XK_f,	   spawn,	   {.v = {"thunar", NULL} } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
